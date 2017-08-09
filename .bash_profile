@@ -17,12 +17,6 @@ if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
     . `brew --prefix`/etc/bash_completion.d/git-completion.bash
 fi
 
-#clang format
-export PATH=$PATH:~/Projects/sdkdevelopment/tools
-
-#depot tools
-export PATH=$PATH:~/Projects/rebtel_sdk_ios/Vendor/depot_tools/
-
 #alias
 alias ls='ls -GFh'
 alias lla='ls -la'
