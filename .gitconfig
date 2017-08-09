@@ -1,0 +1,41 @@
+[user]
+	name = Bo Li
+	email = zffx@163.com
+[core]
+	excludesfile = /Users/bo.li/.gitignore_global
+	editor = subl -n -w
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+	ui = true
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = cyan
+[alias]
+    s = status -s
+    st = status 
+    co = checkout
+    p = pull --rebase
+    filelog = log -u
+    fl = log -u    
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate --numstat
+    ls = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate --date=short
+    logtree = log --graph --oneline --decorate --all
+    cf = clang-format --style=file -f
+    amend = commit --amend
+    la = "!git config -l | grep alias | cut -c 7-"
+[commit]
+	template = /Users/bo.li/.stCommitMsg
