@@ -1,0 +1,33 @@
+{
+	"added_words":
+	[
+		"uninstall",
+		"mysql",
+		"wget",
+		"https",
+		"rabbitmq",
+		"outerbanks"
+	],
+	"color_scheme": "Packages/Monokai JSON+/Monokai JSON+.tmTheme",
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"font_size": 12,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Anaconda",
+		"Git",
+		"JSON Key-Value",
+		"Vintage"
+	],
+	"ignored_words":
+	[
+		"Blockchain",
+		"backend",
+		"blockchain"
+	],
+	"remember_open_files": false,
+	"scroll_past_end": true,
+	"theme": "Default.sublime-theme",
+	"word_wrap": true
+}
