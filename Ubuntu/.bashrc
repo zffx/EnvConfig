@@ -129,5 +129,15 @@ export PS1='\[\e[36m\]\u\[\e[m\]:\[\e[1;33m\]\w\[\e[m\]\[\e[32m\]$(__git_ps1)\[\
 export PATH=/home/zffx/EditorAI/fabric-samples/bin:$PATH
 
 
-#alias
+# alias
 alias lla='ls -la'
+
+# name terminal tab
+# use in this way: set-title my new tab title
+function set-title() {
+  if [[ -z "$ORIG" ]]; then
+    ORIG=$PS1
+  fi
+  TITLE="\[\e]2;$*\a\]"
+  PS1=${ORIG}${TITLE}
+}
